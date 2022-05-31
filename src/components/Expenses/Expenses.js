@@ -8,14 +8,17 @@ export default function Expenses(props) {
   const [year, setYear] = useState("2020");
   const yearSelectHandler = (year) => {
     setYear(year);
-    console.log(year);
   };
+
+  const filteredExpenses = props.items.filter((item) => {
+    return item.date.getFullYear().toString() === year;
+  });
   return (
     <div>
       <Card className="expenses">
         <ExpensesFilter selectedYear={year} onYearSelect={yearSelectHandler} />
-        {props.items.map((item) => (
-          <ExpenseItem title={item.title} price={item.price} date={item.date} />
+        {filteredExpenses.map((item) => (
+          <ExpenseItem key={item.id} title={item.title} price={item.price} date={item.date} />
         ))}
       </Card>
     </div>
