@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Card from "../UI/Card";
-import ExpensesFilter from "./ExpensesFilter";
-import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
+import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 export default function Expenses(props) {
   const [year, setYear] = useState("2020");
@@ -19,6 +19,7 @@ export default function Expenses(props) {
     <div>
       <Card className="expenses">
         <ExpensesFilter selectedYear={year} onYearSelect={yearSelectHandler} />
+        <ExpensesChart filteredExpenses={filteredExpenses} />
         <ExpensesList filteredExpenses={filteredExpenses} />
       </Card>
     </div>
