@@ -10,6 +10,6 @@ This expense tracker app is based on [React The Complete Guide Incl Redux](https
 
 ## Sample Images
 
-- ![image](https://user-images.githubusercontent.com/69317890/171428896-872b1bf0-5f17-48b0-891b-4a551fa5d36d.png)
-- ![image](https://user-images.githubusercontent.com/69317890/171429036-88ad58a3-1b88-4579-a293-8eb69630540d.png)
-- ![image](https://user-images.githubusercontent.com/69317890/171429186-dd154095-f9dd-4e76-a4ee-30eb4b53ba24.png)
+![image](https://user-images.githubusercontent.com/69317890/171428896-872b1bf0-5f17-48b0-891b-4a551fa5d36d.png)  
+![image](https://user-images.githubusercontent.com/69317890/171429036-88ad58a3-1b88-4579-a293-8eb69630540d.png)  
+![image](https://user-images.githubusercontent.com/69317890/171429186-dd154095-f9dd-4e76-a4ee-30eb4b53ba24.png)
