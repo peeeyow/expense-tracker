@@ -38,6 +38,7 @@ export default function ExpenseForm(props) {
           <input
             type="number"
             min="0.0"
+            step="0.01"
             id="amount"
             value={enteredAmount}
             onChange={amountChangeHandler}
